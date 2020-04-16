@@ -85,7 +85,7 @@
 
 .solutions {
     background-color: rgb(166, 233, 217);
-    padding: 50px 0;
+    padding: 50px 0 100px;
 }
 .solutions-title > p > span {
    font-weight: 900;
@@ -94,6 +94,11 @@
     text-align: center;
     font-size: 30px;
     text-transform: uppercase;
+}
+.solutions > hr {
+    border-top: 2px solid rgba(0,0,0,1);
+    border-style: dashed;
+    margin-top: 150px;
 }
 .solutions-icon {
     display: flex;
@@ -110,8 +115,49 @@
 .solutions-icon-item > svg {
  color: rgb(11, 124, 124);
 }
-.solutions > hr {
-    border-top: 2px solid rgba(0,0,0,1);
-    border-style: dashed;
-    margin-top: 150px;
+
+.benefits {
+    background-color: orange;
+    color: #fff;
+}
+.media-top {
+    text-align: center;
+    color: #fff; 
+}
+.media-top-logo > i.fas.fa-lightbulb {
+    width: 2em;
+    height: 1em;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    overflow: hidden;
+    background: orange;
+    margin-top: -75px;
+    padding-top: 15px;
+    font-size: 100px;
+}
+.media-top-title > h2 {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.media-body-new {
+    margin-top: 50px;
+}
+.media-body-list {
+    display: flex;
+    justify-content: flex-start;
+}
+.media-body-list > p {
+ line-height: 24px;
+ margin-left: 15px;
+}
+.media-body-left {
+    align-items: center;
+}
+.media-body-left-content {
+    padding: 35px 0;
+}
+.media-body-left-content > p {
+    font-size: 12px;
+}
+.media-body-right > img {
+    width: 500px;
 }
