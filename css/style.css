@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
 }
+ul, li {
+    list-style-type: none;
+}
 
 .header {
     background-color: orange;
@@ -29,11 +32,14 @@
     float: right;
     z-index: 2;
 }
-.header-top-right > img {
-    width: 30px;
-    height: auto;
+.header-top-right > a > p {
+    background: rgb(241, 206, 142);
     transform: rotate(-30deg);
     margin-bottom: -40px;
+    font-size: 8px;
+    text-align: center;
+    padding: 10px 10px;
+    color: black;
     
 }
 .header-center {
@@ -116,15 +122,16 @@
  color: rgb(11, 124, 124);
 }
 
-.benefits {
+.benefits, .aboutus, .clients, .contact {
     background-color: orange;
     color: #fff;
+    padding-bottom: 125px;
 }
-.media-top {
+.media-top, .aboutus-top, .clients-top, .contact-top {
     text-align: center;
     color: #fff; 
 }
-.media-top-logo > i.fas.fa-lightbulb {
+.media-top-logo > i.fas.fa-lightbulb, .aboutus-top-logo > i.fab.fa-atlassian, .clients-top-logo > i.fas.fa-suitcase, .contact-top-logo > i.fas.fa-id-card-alt {
     width: 2em;
     height: 1em;
     border-radius: 50% 50% 0 0 / 100% 100% 0 0;
@@ -134,11 +141,11 @@
     padding-top: 15px;
     font-size: 100px;
 }
-.media-top-title > h2 {
+.media-top-title > h2, .aboutus-top-title > h2, .clients-top-title > h2, .contact-top-title > h2 {
     text-transform: uppercase;
     margin-top: 10px;
 }
-.media-body-new {
+.media-body-new, .aboutus-list {
     margin-top: 50px;
 }
 .media-body-list {
@@ -161,3 +168,70 @@
 .media-body-right > img {
     width: 500px;
 }
+.aboutus {
+    background-color: rgb(36, 33, 28);
+    padding-bottom: 75px;
+}
+.aboutus-top-logo > i.fab.fa-atlassian {
+    background: rgb(36, 33, 28);
+}
+.list-unstyled-aboutus > .media > i.far.fa-address-card {
+    padding: 30px;
+    border-radius: 100%;
+    background-color: rgb(109, 180, 246);
+    margin: 0 15px;
+    font-size: 36px;
+}
+.clients {
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+.clients-top {
+    color: orange; 
+}
+.clients-top-logo > i.fas.fa-suitcase {
+    width: 2em;
+    height: 1em;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    overflow: hidden;
+    background: #fff;
+    margin-top: -75px;
+    padding-top: 15px;
+    font-size: 100px;
+}
+.fa-suitcase:before {
+    color: orange;
+}
+.clients-content-item > img {
+    max-height: 100px;
+    width: auto;
+}
+.contact {
+    margin-top: 75px;
+    background-color: rgb(162, 216, 241);
+    padding-bottom: 100px;
+}
+.contact-top-logo > i.fas.fa-id-card-alt {
+    width: 2em;
+    height: 1em;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+    overflow: hidden;
+    background: rgb(162, 216, 241);
+    margin-top: -75px;
+    padding-top: 15px;
+    font-size: 100px;
+}
+textarea.form-control {
+    height: 162px;
+}
+.footer {
+    background-color: rgb(80, 77, 77);
+    color: #fff;
+}
+.footer-text > p {
+    padding: 15px 0;
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
